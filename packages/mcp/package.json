@@ -1,0 +1,60 @@
+{
+  "type": "module",
+  "name": "@repo/mcp",
+  "version": "1.0.0",
+  "description": "Utilities for building MCP-compatible servers using STDIO or HTTP, with MCP Client.",
+  "bin": {
+    "mcp-server-stdio": "dist/mcp-server-stdio.js"
+  },
+  "exports": {
+    "./types": {
+      "types": "./dist/types.d.ts"
+    },
+    "./utils/register-mcp-server-http": {
+      "types": "./dist/utils/register-mcp-server-http.d.ts",
+      "import": "./dist/utils/register-mcp-server-http.js",
+      "require": "./dist/utils/register-mcp-server-http.cjs"
+    },
+    "./mcp-client": {
+      "types": "./dist/mcp-client.d.ts",
+      "import": "./dist/mcp-client.js",
+      "require": "./dist/utils/mcp-client.cjs"
+    }
+  },
+  "scripts": {
+    "lint": "eslint",
+    "format": "prettier src --write",
+    "prebuild": "shx rm -rf dist",
+    "build": "tsup",
+    "dev": "concurrently \"npx @modelcontextprotocol/inspector\" \"pnpm watch\" \"node dist/mcp-server-stdio.js\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.25.30",
+    "zod-to-json-schema": "^3.24.5",
+    "lowdb": "^7.0.1"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/prettier-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22",
+    "concurrently": "^9.1.2",
+    "express": "^5.1.0",
+    "prettier": "^3.5.3",
+    "shx": "^0.4.0",
+    "tsup": "^8.5.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}

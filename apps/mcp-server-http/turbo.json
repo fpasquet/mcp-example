@@ -1,0 +1,11 @@
+{
+  "extends": ["//"],
+  "tasks": {
+    "dev": {
+      "env": ["PORT"]
+    },
+    "build": {
+      "env": ["PORT"]
+    }
+  }
+}
