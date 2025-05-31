@@ -1,0 +1,39 @@
+{
+  "astronauts": [
+    { "id": 1, "name": "Alice", "planetId": 1 },
+    { "id": 2, "name": "Bob", "planetId": 1 },
+    { "id": 3, "name": "Charlie", "planetId": 2 },
+    { "id": 4, "name": "David", "planetId": 2 },
+    { "id": 5, "name": "Eve", "planetId": 3 },
+    { "id": 6, "name": "Fred", "planetId": 3 },
+    { "id": 7, "name": "Gina", "planetId": 4 },
+    { "id": 8, "name": "Hank", "planetId": 4 }
+  ],
+  "planets": [
+    { "id": 1, "name": "Donut Factory" },
+    { "id": 2, "name": "Duck Invaders" },
+    { "id": 3, "name": "Raccoon from Asgard" },
+    { "id": 4, "name": "Schizo Cats" }
+  ],
+  "ranks": [
+    { "id": 1, "name": "Rookie", "points": 0 },
+    { "id": 2, "name": "Ensign", "points": 50 },
+    { "id": 3, "name": "Lieutenant", "points": 100 },
+    { "id": 4, "name": "Lieutenant Commander", "points": 200 },
+    { "id": 5, "name": "Commander", "points": 300 },
+    { "id": 6, "name": "Captain", "points": 500 }
+  ],
+  "rewardsHistory": [
+    { "id": 1, "astronautId": 1, "points": 50, "reason": "Projets complétés" },
+    { "id": 2, "astronautId": 1, "points": 75, "reason": "Innovation/Créativité" },
+    { "id": 3, "astronautId": 2, "points": 20, "reason": "Participation événements" },
+    { "id": 4, "astronautId": 2, "points": 20, "reason": "Participation événements" },
+    { "id": 5, "astronautId": 3, "points": 50, "reason": "Collaboration exceptionnelle" },
+    { "id": 6, "astronautId": 3, "points": 30, "reason": "Participation événements" },
+    { "id": 7, "astronautId": 4, "points": 100, "reason": "Mentoring" },
+    { "id": 8, "astronautId": 5, "points": 200, "reason": "Projets complétés" },
+    { "id": 9, "astronautId": 6, "points": 75, "reason": "Mentoring" },
+    { "id": 10, "astronautId": 7, "points": 50, "reason": "Participation événements" },
+    { "id": 11, "astronautId": 8, "points": 150, "reason": "Innovation/Créativité" }
+  ]
+}
